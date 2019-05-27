@@ -240,8 +240,8 @@ class PerguntaViewController: UIViewController {
     
     func animacaoCerto(){
        let ex = PopupDialogDefaultView.appearance()
-        let title = "CERTO!"
-        let message = "A resposta está certa!"
+        let title = "CORRECT!"
+        let message = "Your answer is correct! :D"
         let popup = PopupDialog(title: title, message: message)
         
         
@@ -261,10 +261,10 @@ class PerguntaViewController: UIViewController {
     
     func animacaoErrado(){
         let ex = PopupDialogDefaultView.appearance()
-        let title = "Errado! :("
+        let title = "Wrong! :("
         var message = ""
         if let correta = jsonPerguntaAUsar.correctAnswer{
-            message = "A resposta certa era: \n \(correta)"
+            message = "The right answer was: \n \(correta)"
         }
         //let message = "A resposta certa era: \n \(jsonPerguntaAUsar.correctAnswer)"
         let popup = PopupDialog(title: title, message: message)
@@ -285,10 +285,10 @@ class PerguntaViewController: UIViewController {
     }
     func animacaoTempo(){
         let ex = PopupDialogDefaultView.appearance()
-        let title = "Acabou o Tempo! :("
+        let title = "Time's up! :("
         var message = ""
         if let correta = jsonPerguntaAUsar.correctAnswer{
-            message = "A resposta certa era: \n \(correta)"
+            message = "The right answer was: \n \(correta)"
         }
         //let message = "A resposta certa era: \n \(jsonPerguntaAUsar.correctAnswer)"
         let popup = PopupDialog(title: title, message: message)
